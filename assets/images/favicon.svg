@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32"
+   height="31.999998"
+   viewBox="0 0 8.4666663 8.4666661"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'Mario Kart DS';-inkscape-font-specification:'Mario Kart DS, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:-0.460375px;fill:#000000;fill-opacity:1;stroke-width:0.265;stroke-dasharray:none"
+       x="0.70699161"
+       y="5.6444435"
+       id="text1"><tspan
+         id="tspan1"
+         x="0.70699161"
+         y="5.6444435"
+         dx="0"
+         rotate="0 0 0"
+         style="letter-spacing:-0.460375px">JS</tspan></text>
+    <path
+       id="path5"
+       style="opacity:1;fill:#d74c79;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.0442638;stroke-dasharray:none"
+       d="m 10.695313,9.3691407 v 1.3046873 1.302735 h 0.662109 0.664063 v 2.695312 2.697266 h -0.664063 -0.662109 v 0.662109 0.66211 H 9.3476564 8.0000001 V 18.033203 17.371094 L 7.3242188,17.359375 6.6503907,17.345703 6.638672,16.695313 6.6269532,16.042969 H 5.9863282 5.3476563 v 0.662109 0.664063 H 4.6855469 4.0214844 v 0.640625 0.640625 h 0.6640625 0.6621094 v 0.662109 0.664063 h 0.6621094 0.6640625 v 0.662109 0.66211 h 2.6503907 2.6523441 v -0.66211 -0.662109 h 0.662109 0.664063 V 19.3125 18.650391 h 0.685546 0.683594 V 14.009766 9.3691407 h -1.988281 z m 9.324219,0 v 0.6621093 0.664063 h -0.66211 -0.664062 v 0.662109 0.664063 h -0.66211 -0.662109 v 0.640625 0.640625 h 0.662109 0.66211 v 0.662109 0.664062 h 1.326172 1.326171 v 0.683594 0.685547 h 1.326172 1.326172 v 0.664063 0.662109 h 0.683594 0.685547 v 0.685547 0.683594 h -2.033203 -2.033203 v -0.66211 -0.662109 h -0.66211 -0.662109 V 16.705078 16.042969 H 19.333985 18.69336 v 0.662109 0.664063 h -0.66211 -0.662109 v 0.640625 0.640625 h 0.662109 0.66211 v 0.662109 0.664063 h 0.664062 0.66211 v 0.662109 0.66211 h 3.314453 3.314453 v -0.66211 -0.662109 H 27.3125 27.97461 V 18.009766 16.042969 H 27.3125 26.648438 V 15.357422 14.671875 H 24.638672 22.626953 V 14.009766 13.345703 H 21.964844 21.300782 V 12.66211 11.976563 h 2.033203 2.033203 v 0.662109 0.664063 h 0.640625 0.640625 V 12.638672 11.976563 H 27.3125 27.97461 V 11.335938 10.695313 H 27.3125 26.648438 V 10.03125 9.3691407 h -3.314453 z"
+       transform="scale(0.26458333)" />
+  </g>
+</svg>
