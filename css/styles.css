@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    background-color: #0C120C;
+    color: #ECEBF3;
+    margin: 0;
+}
+
+a {
+    color: #ECEBF3;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Futura', 'Jost', sans-serif;
+    font-size: 3rem;
+    color: #E55381;
+}
+
+h2 {
+    font-family: 'Futura', 'Jost', sans-serif;
+    font-size: 2rem;
+    color: #ECEBF3;
+    margin: 1em 0em 0em 1em;
+    width: 100%;
+}
+
+h3 {
+    text-align: center;
+    margin: 0.5em 0.5rem;
+    font-family: 'Futura', 'Jost', sans-serif;
+    font-size: 1.4rem;
+    color: #E55381;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin: 0.5rem;
+    flex-basis: 20%;
+    flex-grow: 4;
+    line-height: 150%;
+}
+
+main {
+    margin: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article {
+    margin: 1em 1em 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+article img {
+    margin: 1em;
+    border-radius: 20px;
+    width: 15em;
+    height: 15em;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+article p {
+    margin: 2em 0.5em 0em;
+}
+
+.subtitle {
+    text-align: left;
+    font-style: italic;
+    width: 90%;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 1rem;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 20em;
+    flex-grow: 2;
+    margin: 0.8em;
+    align-items: flex-start;
+}
+
+.button-row {
+    display: flex;
+    margin: 1em 0 0.5em;
+}
+
+.button-row a {
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    font-size: 0.9rem;
+    background-color: #ECEBF3;
+    color: #0C120C;
+}
+
+.button-row a:hover, .button-row a:active {
+    background-color: #E55381;
+}
+
+.image-grid {
+    display: flex;
+    margin: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem 1rem;
+}
+
+.image-grid img {
+    padding: 1rem;
+    border: 5px solid transparent;
+    border-radius: 20px;
+}
+
+.image-grid img:hover {
+    border-color: #E55381;
+}
+
+nav {
+    font-family: 'Futura', 'Jost', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a:hover, nav a:active {
+    color: #E55381;
+}
+
+.nav-current {
+    font-weight: bold;
+    color: #E55381;
+    text-transform: uppercase;
+}
+
+#nav-title {
+    padding: 0.3em 0;
+    margin: 0 1em;
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 0.2rem;
+    text-transform: lowercase;
+    white-space: nowrap;
+    font-family: Caveat, cursive;
+}
+
+#nav-links {
+    margin: 0 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-shrink: 2;
+}
+
+#nav-links a {
+    flex-basis: 2rem;
+    margin: 2em;
+    padding: 0.3em;
+    text-decoration: none;
+    font-family: 'Futura', 'Jost', sans-serif;
+    font-size: 1rem;
+}
+
+#nav-menu {
+    display: none;
+    margin: 0 2em;
+    padding: 0.3em;
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+#nav-menu img {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #0C120C;
+}
+
+#nav-dropdown {
+    display: none;
+    margin: 0.8em 1em;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-basis: 100%;
+}
+
+#nav-dropdown.show {
+    display: flex;
+}
+
+#nav-dropdown a {
+    flex-basis: 2rem;
+    margin: 0.5em;
+    padding: 0.3em;
+    text-decoration: none;
+    font-family: 'Futura', 'Jost', sans-serif;
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width: 55rem) {
+    #nav-links {
+        display: none;
+    }
+    #nav-menu {
+        display: block;
+    }
+}
+
+@media (min-width: 55rem) {
+    #nav-dropdown {
+      display: none;
+    }
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-image {
+    display: block;
+    width: 100%;
+    height: 70vh;
+    opacity: 0.5;
+}
+
+#header-content {
+    display: flex;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}
+
+#header-content > * {
+    flex-grow: 0;
+    flex-shrink: 4;
+}
+
+#header-content p {
+    font-family: 'Futura', 'Jost', sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 1rem;
+}
+
+#header-content-buttons {
+    margin: 0 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+#header-content-buttons a {
+    margin: 2em;
+    padding: 0.8em 2em;
+    margin: 1em 1em;
+    font-size: 1.2rem;
+    background-color: #0C120C;
+}
+
+#header-content-buttons a:hover, #header-content-buttons a:active {
+    color: #0C120C;
+    background-color: #ECEBF3;
+}
+
+@media screen and (max-height: 35rem) {
+    #header-content {
+        display: none;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+footer div {
+    margin: 2em 0.5em;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-header {
+    font-family: 'Futura', 'Jost', sans-serif;
+    font-size: 1.4rem;
+    color: #E55381;
+}
+
+#personal h3 {
+    color: #ECEBF3
+}
+
+#work h2{
+    text-align: center;
+}
+
+/* RED: #E55381 */
+/* BLACK: #0C120C */
+/* WHITE: #ECEBF3 */
+
+/* Futura, Lato, Caveat */
+
+
+/* Line spacing, different font? */
