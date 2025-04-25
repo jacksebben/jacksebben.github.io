@@ -1,31 +1,68 @@
 <!doctype html>
 <html lang="en">
     <head>
+		<title>Jack Sebben</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Jack Sebben</title>
 		<link href="https://unpkg.com/@sakun/system.css" rel="stylesheet">
 		<link href="style.css" rel="stylesheet">
-		<script src="script.js" defer></script>
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+		<script src="script.js"></script>
     </head>
     <body>
-		<ul role="menu-bar">
-			<a id="js" role="menu-item" href="index.html" tabindex="0" aria-haspopup="false">
+		<ul id="nav" role="menu-bar">
+			<a id="js" role="menu-item">
 				J.S.
 			</a>
-			<a role="menu-item" href="about.html" tabindex="0" aria-haspopup="false">
+			<a id="nav-about" class="open-win" data-target="#about" role="menu-item">
 				About
 			</a>
-			<a role="menu-item" href="experience.html" tabindex="0" aria-haspopup="false">
+			<a id="nav-exp" class="open-win" data-target="#experience" role="menu-item">
 				Experience
 			</a>
-			<a role="menu-item" href="projects.html" tabindex="0" aria-haspopup="false">
+			<a id="nav-proj" class="open-win" data-target="#projects" role="menu-item">
 				Projects
 			</a>
 			<div class="flex-space"></div>
-			<li role="menu-item" tabindex="0" aria-haspopup="false">
-				<span id="time"></span>
-			</li>
+			<span id="time" role="menu-item"></span>
 		</ul>
+		
+		<div id="footer" class="standard-dialog center scale-down">
+		  <h1 class="dialog-text">jacksebben.com, Version 2.0</h1>
+		  <p class="dialog-text">&copy; Jack Sebben <span id="year">20XX</span>. All rights reserved.</p>
+		</div>
+		
+		<div id="about" class="window">
+		  <div class="title-bar">
+			<h1 class="title">About Me</h1>
+			<button aria-label="Resize" class="resize"></button>
+		  </div>
+		  <div class="separator"></div>
+		  <div class="window-pane">
+			Stuff about me goes here.
+		  </div>
+		</div>
+		
+		<div id="experience" class="window">
+		  <div class="title-bar">
+			<h1 class="title">Skills and Experience</h1>
+			<button aria-label="Resize" class="resize"></button>
+		  </div>
+		  <div class="separator"></div>
+		  <div class="window-pane">
+			Skills and work history goes here.
+		  </div>
+		</div>
+		
+		<div id="projects" class="window">
+		  <div class="title-bar">
+			<h1 class="title">All Projects</h1>
+			<button aria-label="Resize" class="resize"></button>
+		  </div>
+		  <div class="separator"></div>
+		  <div class="window-pane">
+			Academic and personal projects go here.
+		  </div>
+		</div>
 	</body>
 </html>
