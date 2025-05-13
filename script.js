@@ -1,11 +1,9 @@
 let zIndexCounter = 1;
 
 function focusWin(win, active) {
-	// Bring window to front
-	bringFront(win);
-	
 	// Show/hide visuals to indicate focus/unfocused
 	if (active) {
+		bringFront(win);
 		const titleBar = win.find('.inactive-title-bar');
 		titleBar.removeClass('inactive-title-bar');
 		titleBar.addClass('title-bar');

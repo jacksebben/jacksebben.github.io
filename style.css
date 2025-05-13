@@ -1,14 +1,20 @@
 html {
 	margin: 0;
 	height: 100%;
-	background-color: black;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 body {
 	margin: 0 15px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: black;
+	overflow: hidden;
+}
+
+#desktop {
+	position: relative;
 	width: 120vh;
 	aspect-ratio: 4 / 3;
 	background: url(images/mac-os.png) repeat;
@@ -19,6 +25,10 @@ a {
 	text-decoration: none;
 }
 
+img
+{
+	width: 150px;
+}
 
 #nav {
 	padding: 0 15px;
@@ -32,34 +42,34 @@ a {
 }
 
 #footer {
-	position: fixed;
-	inset: 0;
+	position: absolute;
+	top: 45%;
+	left: 33%;
 	width: 20em;
-	height: 5em;
-	margin: auto;
+	height: 3em;
 	text-align: center;
 }
 
 .window {
-	position: fixed;
+	position: absolute;
 	width: 45em;
 	height: 25em;
-	max-width: 100em;
-	max-height: 100em;
-	margin: auto;
 }
 
 #about {
 	display: none;
-	inset: 0 15vw 25vh 0;
+	top: 15%;
+	left: 5%;
 }
 
 #experience {
 	display: none;
-	inset: 0 0 10vh 15vw;
+	top: 20%;
+	left: 30%;
 }
 
 #projects {
 	display: none;
-	inset: 20vh 10vw 0 0;
+	top: 40%;
+	left: 18%;
 }

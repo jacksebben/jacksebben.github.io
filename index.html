@@ -10,59 +10,65 @@
 		<script src="script.js"></script>
     </head>
     <body>
-		<ul id="nav" role="menu-bar">
-			<a id="js" role="menu-item">
-				J.S.
-			</a>
-			<a id="nav-about" class="open-win" data-target="#about" role="menu-item">
-				About
-			</a>
-			<a id="nav-exp" class="open-win" data-target="#experience" role="menu-item">
-				Experience
-			</a>
-			<a id="nav-proj" class="open-win" data-target="#projects" role="menu-item">
-				Projects
-			</a>
-			<div class="flex-space"></div>
-			<span id="time" role="menu-item"></span>
-		</ul>
-		
-		<div id="footer" class="standard-dialog center scale-down">
-		  <h1 class="dialog-text">jacksebben.com, Version 2.0</h1>
-		  <p class="dialog-text">&copy; Jack Sebben <span id="year">20XX</span>. All rights reserved.</p>
-		</div>
-		
-		<div id="about" class="window">
-		  <div class="title-bar">
-			<h1 class="title">About Me</h1>
-			<button aria-label="Resize" class="resize"></button>
-		  </div>
-		  <div class="separator"></div>
-		  <div class="window-pane">
-			Stuff about me goes here.
-		  </div>
-		</div>
-		
-		<div id="experience" class="window">
-		  <div class="title-bar">
-			<h1 class="title">Skills and Experience</h1>
-			<button aria-label="Resize" class="resize"></button>
-		  </div>
-		  <div class="separator"></div>
-		  <div class="window-pane">
-			Skills and work history goes here.
-		  </div>
-		</div>
-		
-		<div id="projects" class="window">
-		  <div class="title-bar">
-			<h1 class="title">All Projects</h1>
-			<button aria-label="Resize" class="resize"></button>
-		  </div>
-		  <div class="separator"></div>
-		  <div class="window-pane">
-			Academic and personal projects go here.
-		  </div>
-		</div>
+    	<div id="desktop">
+    		<ul id="nav" role="menu-bar">
+				<a id="js" role="menu-item">
+					J.S.
+				</a>
+				<a id="nav-about" class="open-win" data-target="#about" role="menu-item">
+					About
+				</a>
+				<a id="nav-exp" class="open-win" data-target="#experience" role="menu-item">
+					Experience
+				</a>
+				<a id="nav-proj" class="open-win" data-target="#projects" role="menu-item">
+					Projects
+				</a>
+				<div class="flex-space"></div>
+				<span id="time" role="menu-item"></span>
+			</ul>
+			
+			<div id="footer" class="standard-dialog center scale-down">
+			  <p class="dialog-text">&copy; Jack Sebben <span id="year">20XX</span>. All rights reserved.</p>
+			</div>
+			
+			<div id="about" class="window">
+			  <div class="title-bar">
+				<h1 class="title">About Me</h1>
+				<button aria-label="Resize" class="resize"></button>
+			  </div>
+			  <div class="separator"></div>
+			  <div class="window-pane">
+				<section class="field-row" style="justify-content: flex-start">
+			        <div class="square">
+			        	<img src="images/me.jpeg">
+			        </div>
+			        <p class="alert-text" style="padding-left:10px;">This is a standard alert box. The text would be placed here. This is where more text appears</p>
+			      </section>
+			  </div>
+			</div>
+			
+			<div id="experience" class="window">
+			  <div class="title-bar">
+				<h1 class="title">Skills and Experience</h1>
+				<button aria-label="Resize" class="resize"></button>
+			  </div>
+			  <div class="separator"></div>
+			  <div class="window-pane">
+				Skills and work history goes here.
+			  </div>
+			</div>
+			
+			<div id="projects" class="window">
+			  <div class="title-bar">
+				<h1 class="title">All Projects</h1>
+				<button aria-label="Resize" class="resize"></button>
+			  </div>
+			  <div class="separator"></div>
+			  <div class="window-pane">
+				Academic and personal projects go here.
+			  </div>
+			</div>
+    	</div>
 	</body>
 </html>
