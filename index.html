@@ -12,7 +12,7 @@
     <body>
     	<div id="desktop">
     		<ul id="nav" role="menu-bar">
-				<a id="js" role="menu-item">
+				<a id="js" href="." role="menu-item">
 					J.S.
 				</a>
 				<a id="nav-about" class="open-win" data-target="#about" role="menu-item">
@@ -28,46 +28,75 @@
 				<span id="time" role="menu-item"></span>
 			</ul>
 			
-			<div id="footer" class="standard-dialog center scale-down">
-			  <p class="dialog-text">&copy; Jack Sebben <span id="year">20XX</span>. All rights reserved.</p>
-			</div>
-			
-			<div id="about" class="window">
-			  <div class="title-bar">
-				<h1 class="title">About Me</h1>
-				<button aria-label="Resize" class="resize"></button>
-			  </div>
-			  <div class="separator"></div>
-			  <div class="window-pane">
-				<section class="field-row" style="justify-content: flex-start">
-			        <div class="square">
-			        	<img src="images/me.jpeg">
-			        </div>
-			        <p class="alert-text" style="padding-left:10px;">This is a standard alert box. The text would be placed here. This is where more text appears</p>
-			      </section>
-			  </div>
-			</div>
-			
-			<div id="experience" class="window">
-			  <div class="title-bar">
-				<h1 class="title">Skills and Experience</h1>
-				<button aria-label="Resize" class="resize"></button>
-			  </div>
-			  <div class="separator"></div>
-			  <div class="window-pane">
-				Skills and work history goes here.
-			  </div>
-			</div>
-			
-			<div id="projects" class="window">
-			  <div class="title-bar">
-				<h1 class="title">All Projects</h1>
-				<button aria-label="Resize" class="resize"></button>
-			  </div>
-			  <div class="separator"></div>
-			  <div class="window-pane">
-				Academic and personal projects go here.
-			  </div>
+			<div id="desk-stuff">
+				<div class="standard-dialog center scale-down">
+				  <p class="dialog-text">&copy; Jack Sebben <span id="year">20XX</span>. All rights reserved.</p>
+				</div>
+				
+				<div id="about" class="window">
+				  <div class="title-bar">
+					<h1 class="title">About Me</h1>
+					<button aria-label="Resize" class="resize"></button>
+				  </div>
+				  <div class="separator"></div>
+				  <div class="window-pane">
+					<section class="field-row">
+				        <div class="square">
+				        	<img id="my-pic" src="images/me.jpeg">
+				        </div>
+				        <div>
+				        	<p class="alert-text">Hi, I’m Jack Sebben, a Computer Science student at Rochester Institute of Technology. I have multiple years of experience in software development and game design. My expected graduation date is December 2025.</p>
+				        	<p class="alert-text">I enjoy pursuing other related fields of study, such as mathematics or robotics. With math, I’ve been passionate through the time I competed on my school’s math team. A solid placing at regionals my senior year landed our team at state. Around the same time, my robotics teams also went to state with me as the lead programmer. I’ve always been interested in automation, and would love a future hobby or opportunity in the field. I enjoy programming games in my free time, typically small demos or projects I’ve made alongside friends. As a personal hobby, I’ve been learning the German language for about a year now. Last summer, I visited the country as a study abroad for my degree, which was an entirely new and exciting opportunity for me.</p>
+				        	<p class="alert-text">If you are interested in hiring, or simply want to get in contact, you can shoot me an email at <a href="mailto:johnjacksebben@gmail.com">johnjacksebben@gmail.com.</a></p>
+				        </div>
+				      </section>
+				  </div>
+				</div>
+				
+				<div id="experience" class="window">
+				  <div class="title-bar">
+					<h1 class="title">Skills and Experience</h1>
+					<button aria-label="Resize" class="resize"></button>
+				  </div>
+				  <div class="separator"></div>
+				  <div class="window-pane">
+					<section class="field-row">
+				        <div class="square">
+				        	<img src="images/pixit.jpg">
+				        </div>
+				        <div>
+				        	<p class="alert-text"><u>Discovery Machine Inc.</u><br>Hit the griddy</p>
+			        	</div>
+			      	</section>
+			      	<section class="field-row">
+				        <div class="square">
+				        	<img src="images/pixit.jpg">
+				        </div>
+				        <div>
+				        	<p class="alert-text"><u>C Speed</u><br>Hit the griddy</p>
+			        	</div>
+			      	</section>
+			      	<section class="field-row">
+				        <div class="square">
+				        	<img src="images/pixit.jpg">
+				        </div>
+				        <div>
+				        	<p class="alert-text"><u>Pixit</u><br>Originally, I was brought on as a software intern for L Street Corporation. One of the company’s subsidiaries, Pixit, is a lost and found web application. After a sudden disappearance of the main developer (not kidding), I stepped into the role of sole maintainer of the codebase. The application was built with Ruby on Rails, which I had only played with before. A little self-teaching later, I resolved several critical bugs persisting for over a month. I continued working primarily for Pixit, fixing bugs for the few months of my internship. This was also the first time I had used Git in a professional setting, which helped with maintaining the code. I had to adapt quickly and troubleshoot unfamiliar issues, but I delivered.</p>
+			        	</div>
+			      	</section>
+				  </div>
+				</div>
+				
+				<div id="projects" class="window">
+				  <div class="title-bar">
+					<h1 class="title">All Projects</h1>
+					<button aria-label="Resize" class="resize"></button>
+				  </div>
+				  <div class="separator"></div>
+				  <div class="window-pane">
+					<p class="alert-text">Academic and personal projects go here.</p>
+				  </div>
+				</div>
 			</div>
     	</div>
 	</body>
