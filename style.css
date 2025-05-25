@@ -48,7 +48,7 @@ img
 	padding-inline: 15px;
 }
 
-#nav .flex-space {
+.flex-space {
 	flex-grow: 1;
 }
 
@@ -82,10 +82,10 @@ img
 
 #about {
 	display: none;
-  	top: -35%;
+  	top: -25%;
   	left: -25%;
-	width: 45em;
-	height: 25em;
+	width: 50em;
+	height: 35em;
 }
 
 #experience {
@@ -109,9 +109,29 @@ img
 	margin-bottom: 2em;
 }
 
+.description {
+	display: flex;
+	flex-direction: column;
+}
+
 .alert-text {
-	font-size: 0.9em;
 	margin-top: 0;
 	margin-bottom: 1.2em;
 	padding-left: 10px;
+}
+
+#skills {
+	align-self: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1em;
+	gap: 10px;
+	width: 25em;
+}
+
+.skill-icon {
+	-webkit-filter: grayscale(25%); /* Safari 6.0 - 9.0 */
+  	filter: grayscale(25%);
+	width: 33px;
 }
