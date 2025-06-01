@@ -58,14 +58,14 @@ $(document).ready(function() {
 		e.preventDefault();
 		const target = $(this).data('target');
 		const newWin = $(target);
-		newWin.show();
-
-		// Only hide others if this is a nav button
-		if ($(this).hasClass('nav-open-win')) {
-			$('.window').not(newWin).hide();
-		}
+		newWin.show();		
 		
 		if (isMobileViewport()) {
+			// Only hide others if this is a nav button
+			if ($(this).hasClass('nav-open-win')) {
+				$('.window').not(newWin).hide();
+			}
+
 			// === MOBILE: show in‐column and move to top ===
 			if (!newWin.is(':visible')) {
 				newWin.show();

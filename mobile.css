@@ -4,6 +4,11 @@
 	body {
 		margin: 5px;
 	}
+
+	a {
+		padding-inline: 0;
+	}
+
 	/* Make the #desktop container scale to full‐width of the phone 
 	   and let it scroll vertically */
 	#desktop {
@@ -23,7 +28,8 @@
 		display: flex;
 		flex-wrap: nowrap;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: center;
+		gap: 5px;
 		background: #ddd;         /* or whatever fits your System 7 look */
 	}
 	#nav a {
@@ -102,7 +108,8 @@
 
 	#my-pic {
 		width: 150px;
-		margin-bottom: 1em;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
 	}
 
 	/* Reduce margins/padding inside each .window‐pane for readability */
@@ -113,22 +120,34 @@
 	.field-row {
 		flex-direction: column;
 		align-items: center;
-		margin-bottom: 0;
 	}
+
+	.field-row * {
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+	}
+
+	.field-desc {
+		margin: 0;
+	}
+
 	.display-row {
 		flex-direction: column;
 		flex-wrap: wrap;
 		gap: 0.5em;
 		width: 100%;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+	}
+
+	.pic-and-button {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 80%;
 	}
 
 	.hide-mobile {
 		display: none;
-	}
-
-	.window a.open-win {
-		display: inline-block;
-		height: 70px;
-		padding: 5px;
 	}
 }
