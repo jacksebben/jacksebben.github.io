@@ -30,6 +30,10 @@ function updateTime() {
 	$('#year').text(now.getFullYear());
 }
 
+function isMobileViewport() {
+	return window.matchMedia("(max-width: 768px)").matches;
+}
+
 $(document).ready(function() {
 	// Updates current time in top right
 	updateTime(); // Inital
@@ -51,14 +55,30 @@ $(document).ready(function() {
 	});
 	
 	$('.open-win').on('click', function(e) {
+		e.preventDefault();
 		const target = $(this).data('target');
 		const newWin = $(target);
 		newWin.show();
+
+		// Only hide others if this is a nav button
+		if ($(this).hasClass('nav-open-win')) {
+			$('.window').not(newWin).hide();
+		}
 		
-		// Delay focus until after the body click handler
-		setTimeout(() => {
-			focusWin(newWin, true);
-		}, 0);
+		if (isMobileViewport()) {
+			// === MOBILE: show in‐column and move to top ===
+			if (!newWin.is(':visible')) {
+				newWin.show();
+			}
+			// Prepend it to #desk-stuff so it appears at the top
+			$('#desk-stuff').prepend(newWin);
+		} else {
+			// === DESKTOP: original behavior ===
+			newWin.show();
+			setTimeout(() => {
+				focusWin(newWin, true);
+			}, 0);
+		}
 	});
 	
 	$('.window .title-bar .resize').on('click', function() {

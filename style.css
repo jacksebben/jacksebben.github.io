@@ -16,6 +16,7 @@ body {
 a {
 	text-decoration: none;
 	padding-inline: 15px;
+	height: auto;
 }
 
 img {
@@ -108,8 +109,8 @@ img {
 #history {
 	top: 70%;
   	left: -55%;
-	width: 28em;
-	height: 11em;
+	width: 35em;
+	height: 16em;
 }
 
 #dmi {
@@ -207,7 +208,7 @@ img {
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 1em;
-	gap: 10px;
+	gap: 20px;
 	width: 70%;
 }
 
