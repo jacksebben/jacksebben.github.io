@@ -4,11 +4,13 @@ function focusWin(win, active) {
 	// Show/hide visuals to indicate focus/unfocused
 	if (active) {
 		bringFront(win);
+		win.removeClass('inactive');
 		const titleBar = win.find('.inactive-title-bar');
 		titleBar.removeClass('inactive-title-bar');
 		titleBar.addClass('title-bar');
 		titleBar.find('.resize').show();
 	} else {
+		win.addClass('inactive');
 		const titleBar = win.find('.title-bar');
 		titleBar.removeClass('title-bar');
 		titleBar.addClass('inactive-title-bar');
