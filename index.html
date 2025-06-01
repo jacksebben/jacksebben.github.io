@@ -1,55 +1,254 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Jack Sebben - Home</title>
-        <link rel="icon" href="assets/images/favicon.svg">
-        <link href="assets/css/styles.css" rel="stylesheet">
-        <script src="assets/javascript/navigation.js"></script>
-    </head>
-    <body>
-        <nav>
-            <a id="nav-title" class="nav-current" href="/">jack sebben</a>
-            <span id="nav-links">
-                <a href="history.html">History</a>
-                <a href="projects.html">Projects</a>
-                <a href="education.html">Education</a>
-                <a href="personal.html">About</a>
-            </span>
-            <button id="nav-menu">
-                <img src="assets/images/hamburger.png" alt="Hamburger Menu">
-            </button>
-            <div id="nav-dropdown">
-                <a href="history.html">History</a>
-                <a href="projects.html">Projects</a>
-                <a href="education.html">Education</a>
-                <a href="personal.html">About</a>
-            </div>
-        </nav>
-        <header>
-            <img id="header-image" src="assets/images/lava.gif" alt="Jack Sebben">
-            <div id="header-content">
-                <p>Jack Sebben</p>
-                <div id="header-content-buttons">
-                    <a href="assets/files/resume.pdf" download>Resume</a>
-                    <a href="https://www.linkedin.com/in/jacksebben/">LinkedIn</a>
-                </div>
-            </div>
-        </header>
-        <main>
-            
-        </main>
-        <footer>
-            <div>
-                <p class="footer-header">Contact</p>
-                <p>
-                    Email: <a href="mailto:johnjacksebben@gmail.com">johnjacksebben@gmail.com</a><br>
-                </p>
-            </div>
-            <div>
-                <p>&copy; 2024 Jack Sebben. All rights reserved.</p>
-            </div>
-        </footer>
-    </body>
+	<head>
+		<title>Jack Sebben</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://unpkg.com/@sakun/system.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+		<link href="mobile.css" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<div id="desktop">
+			<ul id="nav" role="menu-bar">
+				<a id="js" href="." role="menu-item">
+					J.S.
+				</a>
+				<a id="nav-about" class="open-win nav-open-win" data-target="#about" role="menu-item">
+					About
+				</a>
+				<a id="nav-exp" class="open-win nav-open-win" data-target="#history" role="menu-item">
+					History
+				</a>
+				<a id="nav-proj" class="open-win nav-open-win" data-target="#projects" role="menu-item">
+					Projects
+				</a>
+				<div class="flex-space hide-mobile"></div>
+				<span id="time" class="hide-mobile" role="menu-item"></span>
+			</ul>
+			
+			<div id="desk-stuff">
+				<div class="standard-dialog center scale-down">
+					<p class="dialog-text">&copy; Jack Sebben <span id="year">20XX</span>. All rights reserved.</p>
+				</div>
+				
+				<div id="about" class="window">
+					<div class="title-bar">
+						<h1 class="title">About Me</h1>
+						<button aria-label="Resize" class="resize"></button>
+					</div>
+					<div class="separator"></div>
+					<div class="window-pane">
+						<section class="field-row">
+							<img id="my-pic" src="images/me.jpeg">
+							<div class="field-desc">
+								<p class="alert-text"><b>Jack Sebben</b> - Computer Science BS at Rochester Institute of Technology.<br>Graduating in December 2025.</p>
+								<p class="alert-text">With multiple years of experience in software development and a history of game design, I am looking for a full-time position <b>starting 2026</b>.
+								<div class="display-row">
+									<div class="keep-horiz">
+										<img class="skill-icon" src="images/c.png">
+										<img class="skill-icon" src="images/c++.png">
+										<img class="skill-icon" src="images/c-sharp.png">
+									</div>
+									<div class="flex-space"></div>
+									<div class="keep-horiz">
+										<img class="skill-icon" src="images/java.png">
+										<img class="skill-icon" src="images/python.png">
+									</div>
+									<div class="flex-space"></div>
+									<div class="keep-horiz">
+										<img class="skill-icon" src="images/html.png">
+										<img class="skill-icon" src="images/css.png">
+										<img class="skill-icon" src="images/js.png">
+									</div>
+								</div>
+								<p class="alert-text">If you are interested in hiring, or simply want to get in contact, you can shoot me an email at <a href="mailto:johnjacksebben@gmail.com">johnjacksebben@gmail.com.</a></p>
+								<p class="alert-text"><b>Additional Details</b> - In my free time, I enjoy developing video games, typically small demos or projects I’ve made alongside friends. Automation and embedded systems have always intrigued me, and I would love to explore those skills. Some of my classes involve other, related fields of study, such as mathematics or robotics. A passionate experience for me was placing in regionals and going to state for my school’s math team. Around the same time, my robotics teams also went to state with me as the lead programmer. As a personal hobby, I’ve been learning the German language for about a year now. I visited the country last summer through my degree's study abroad program, which was an entirely new and exciting opportunity for me.</p>
+							</div>
+						</section>
+					</div>
+				</div>
+				
+				<div id="history" class="window">
+					<div class="title-bar">
+						<h1 class="title">Experience and History</h1>
+						<button aria-label="Resize" class="resize"></button>
+					</div>
+					<div class="separator"></div>
+					<div class="window-pane">
+						<p>I have prior experience with numerous small businesses in the field of software development.</p>
+						<div class="display-row full-width">
+							<div class="keep-horiz">
+								<a class="open-win" data-target="#dmi">
+									<img class="medium" src="images/dmi.jpg">
+								</a>
+								<a class="open-win" data-target="#cspeed">
+									<img class="medium" src="images/cspeed.jpg">
+								</a>
+								<a class="open-win" data-target="#pixit">
+									<img class="medium" src="images/pixit.jpg">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="dmi" class="window">
+					<div class="title-bar">
+						<h1 class="title">Discovery Machine Inc.</h1>
+						<button aria-label="Resize" class="resize"></button>
+					</div>
+					<div class="separator"></div>
+					<div class="window-pane">
+						<section class="field-row">
+							<div class="pic-and-button">
+								<img src="images/dmi.jpg">
+								<a class="small-border" href="https://discoverymachine.com/" target="_blank">Visit Site</a>
+							</div>
+							<p class="alert-text">Although ongoing, the majority of my experience has been with the design of a specific product, rather than development. Experiencing the transition between these was beneficial when it came time to create the physical product: a generative-AI service with proprietary technology that creates the forms for a tedious documentation package.</p>
+						</section>
+					</div>
+				</div>
+
+				<div id="cspeed" class="window">
+					<div class="title-bar">
+						<h1 class="title">C Speed</h1>
+						<button aria-label="Resize" class="resize"></button>
+					</div>
+					<div class="separator"></div>
+					<div class="window-pane">
+						<section class="field-row">
+							<div class="pic-and-button">
+								<img src="images/cspeed.jpg">
+								<a class="small-border" href="https://www.cspeed.com/" target="_blank">Visit Site</a>
+							</div>
+							<p class="alert-text">Most of my time was spent maintaining and rebuilding a legacy C# calibration application. This desktop app was meant to be compatible with a range of embedded medical devices, one of which I tested with. Along with several senior developers and a QA team, we continued upkeep of the software, adding new functionalities or fixing old ones. The second half of my work contributed to the development of a new embedded system. I built firmware in C++ for an embedded Linux environment. These were the same devices used with the desktop application.</p>
+						</section>
+					</div>
+				</div>
+
+				<div id="pixit" class="window">
+					<div class="title-bar">
+						<h1 class="title">Pixit</h1>
+						<button aria-label="Resize" class="resize"></button>
+					</div>
+					<div class="separator"></div>
+					<div class="window-pane">
+						<section class="field-row">
+							<div class="pic-and-button">
+								<img src="images/pixit.jpg">
+								<a class="small-border" href="https://www.pixithq.com/" target="_blank">Visit Site</a>
+							</div>
+							<p class="alert-text">Originally, I was brought on as a software intern for L Street Corporation. One of the company’s subsidiaries, Pixit, is a lost and found web application. After a sudden disappearance of the main developer (not kidding), I stepped into the role of sole maintainer of the codebase. The application was built with Ruby on Rails, which I had only played with before. A little self-teaching later, I resolved several critical bugs persisting for over a month. I continued working primarily for Pixit, fixing bugs for the few months of my internship. This was also the first time I had used Git in a professional setting, which helped with maintaining the code. I had to adapt quickly and troubleshoot unfamiliar issues, but I delivered.</p>
+						</section>
+					</div>
+				</div>
+				
+				<div id="projects" class="window">
+					<div class="title-bar">
+						<h1 class="title">All Projects</h1>
+						<button aria-label="Resize" class="resize"></button>
+					</div>
+					<div class="separator"></div>
+					<div class="window-pane">
+						<div class="display-row full-width">
+							<div class="keep-horiz">
+								<a class="open-win" data-target="#fps">
+									<img class="medium force-square small-border" src="images/fps.png">
+								</a>
+								<a class="open-win" data-target="#speedrun">
+									<img class="medium force-square small-border" src="images/speedrun.png">
+								</a>
+								<a class="open-win" data-target="#pongun">
+									<img class="medium force-square small-border" src="images/pongun.png">
+								</a>
+							</div>
+							<div class="flex-space"></div>
+							<div class="keep-horiz">
+								<a class="open-win" data-target="#flagstore">
+									<img class="medium force-square small-border" src="images/flagstore.png">
+								</a>
+								<a class="open-win" data-target="#music">
+									<img class="medium force-square small-border" src="images/music.png">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="fps" class="window">
+					<div class="title-bar">
+						<h1 class="title">Jackseb FPS</h1>
+						<button aria-label="Resize" class="resize"></button>
+					</div>
+					<div class="separator"></div>
+					<div class="window-pane">
+						<section class="field-row">
+							<a class="small-border" href="https://github.com/jacksebben/Jackseb-FPS" target="_blank">View</a>
+							<p class="alert-text">"Jackseb FPS" is a multiplayer first-person shooter (FPS) prototype developed using C# in Unity. The main game mode is a free-for-all deathmatch, with the game supporting multiple online players. The game includes various weapons, such as assault rifles, shotguns, pistols, and more. The game's network code is optimized for low latency online play, including basic matchmaking services for easy match accessibility.</p>
+						</section>
+					</div>
+				</div>
+
+				<div id="speedrun" class="window">
+					<div class="title-bar">
+						<h1 class="title">Speedrun Maze</h1>
+						<button aria-label="Resize" class="resize"></button>
+					</div>
+					<div class="separator"></div>
+					<div class="window-pane">
+						<section class="field-row">
+							<a class="small-border" href="https://yackseb.itch.io/speedrun-maze" target="_blank">View</a>
+							<p class="alert-text">Speedrun Maze is a singleplayer maze game developed using C# in Unity. The game involves navigating through a series of mazes while being stalked by a creature inhabiting every level. Players must press buttons located throughout the maze to unlock the final door for each level and progress to the next. The game features multiple difficulty levels, each with unique maze designs and unique attributes for the enemy. The game's AI system is designed to provide challenging gameplay by tracking the player's movements and adapting to their pathing throughout the level.</p>
+						</section>
+					</div>
+				</div>
+
+				<div id="pongun" class="window">
+					<div class="title-bar">
+						<h1 class="title">Pongun</h1>
+						<button aria-label="Resize" class="resize"></button>
+					</div>
+					<div class="separator"></div>
+					<div class="window-pane">
+						<section class="field-row">
+							<a class="small-border" href="https://yackseb.itch.io/pongun" target="_blank">View</a>
+							<p class="alert-text">Pongun is a modification of the original 1972 Pong video game. Developed in C#, Pongun is a 2D singeplayer sports <i>and</i> top-down shooter game. The player must compete against the computer to hit the ball into its "goal" on the edge of the screen, similar to the original. Howewever, both the player and computer have a cannon equipped change the trajectory of the ball. The game was made for a Game Jam in only 72 hours, but this simple concept is intriguingly fun. I plan to revisit this game soon for a remake, polishing the bugs and game design concerns of its predecessor.</p>
+						</section>
+					</div>
+				</div>
+
+				<div id="flagstore" class="window">
+					<div class="title-bar">
+						<h1 class="title">Flag Store</h1>
+						<button aria-label="Resize" class="resize"></button>
+					</div>
+					<div class="separator"></div>
+					<div class="window-pane">
+						<section class="field-row">
+							<a class="small-border" href="https://github.com/jas8726/flags-estore" target="_blank">View</a>
+							<p class="alert-text">This academic e-store project is a web-based application built using the Angular framework for the frontend and the Spring framework for the backend. The application allows users to purchase various country flags and customize their own flags using predetermined designs. This project involved learning the Agile method of software engineering alongside other team members who also contributed.</p>
+						</section>
+					</div>
+				</div>
+
+				<div id="music" class="window">
+					<div class="title-bar">
+						<h1 class="title">Music Database</h1>
+						<button aria-label="Resize" class="resize"></button>
+					</div>
+					<div class="separator"></div>
+					<div class="window-pane">
+						<section class="field-row">
+							<a class="small-border" href="https://github.com/jas8726/flags-estore" target="_blank">View</a>
+							<p class="alert-text">The music database project is an academic web application that allows users to create accounts, log in, search for songs, play songs, create playlists, add friends, and view popular songs. The frontend of the application is implemented in Java with a command-line interface. The backend of the application is the relational database management system (RDBMS) of PostgreSQL, which uses SQL to store and retrieve user information, songs, playlists, and friend relationships. The application follows a client-server architecture, where the Java-based frontend interacts with the RDBMS backend to fetch and display data to the user.</p>
+						</section>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</body>
 </html>

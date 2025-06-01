@@ -1,0 +1,229 @@
+html {
+	margin: 0;
+	height: 100%;
+}
+
+body {
+	margin: 0 15px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: black;
+	overflow: hidden;
+}
+
+a {
+	text-decoration: none;
+	padding-inline: 15px;
+	height: auto;
+}
+
+img {
+	width: 150px;
+}
+
+.medium {
+	width: 100px;
+}
+
+.force-square {
+	aspect-ratio: 1 / 1;
+  	height: 100%;
+	object-fit: cover;
+}
+
+.small-border {
+	border: 2px solid;
+}
+
+#desktop {
+	position: relative;
+	width: 138vh;
+	aspect-ratio: 4.25 / 3;
+	background: url(images/mac-os.png) repeat;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+#nav {
+	padding: 0 15px;
+	border-radius: 15px 15px 0 0;
+	text-align: center;
+	font-size: 1.8em;
+}
+
+#nav * {
+	padding-inline: 15px;
+}
+
+.flex-space {
+	flex-grow: 1;
+}
+
+/* gray area */
+#desk-stuff {
+	position: relative;
+	flex-grow: 1;
+}
+
+/* footer */
+.standard-dialog {
+	position: absolute;
+	margin: auto;
+	margin-inline: auto; 
+	left: 0; 
+  	right: 0; 
+  	top: 0;
+  	bottom: 0;
+	width: 20em;
+	height: 3em;
+	text-align: center;
+	font-size: 0.9em;
+}
+
+.window {
+	display: none;
+	position: absolute;
+	margin: auto;
+	margin-inline: auto;
+  	left: 0; 
+  	right: 0;
+  	top: 0;
+  	bottom: 0;
+}
+
+.window.inactive * {
+	color: gray;
+}
+
+#about {
+  	top: -20%;
+  	left: -25%;
+	width: 55em;
+	height: 36em;
+}
+
+#history {
+	top: 65%;
+  	left: -50%;
+	width: 35em;
+	height: 16em;
+}
+
+#dmi {
+	top: -55%;
+	left: 40%;
+	width: 40em;
+	height: 15em;
+}
+
+#cspeed {
+	top: -5%;
+	left: 45%;
+	width: 40em;
+	height: 21em;
+}
+
+#pixit {
+	top: 45%;
+	left: 40%;
+	width: 40em;
+	height: 25em;
+}
+
+#projects {
+	top: 62%;
+	left: 30%;
+	width: 52em;
+	height: 11em;
+}
+
+#fps {
+	top: -55%;
+	left: -50%;
+	width: 30em;
+	height: 21em;
+}
+
+#speedrun {
+	top: -30%;
+	left: -30%;
+	width: 32em;
+	height: 23em;
+}
+
+#pongun {
+	top: -50%;
+	left: -5%;
+	width: 32em;
+	height: 23em;
+}
+
+#flagstore {
+	top: -25%;
+	left: 38%;
+	width: 30em;
+	height: 19em;
+}
+
+#music {
+	top: -55%;
+	left: 50%;
+	width: 35em;
+	height: 22em;
+}
+
+/* everything below title bar */
+.window-pane {
+	display: flex;
+	flex-direction: column;
+}
+
+.field-row {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-bottom: 1em;
+}
+
+.field-desc {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.alert-text {
+	margin-top: 0;
+	margin-bottom: 1.2em;
+	padding-left: 10px;
+	font-size: 1.1em;
+}
+
+.display-row {
+	align-self: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1em;
+	gap: 20px;
+	width: 70%;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.keep-horiz {
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+}
+
+.skill-icon {
+	-webkit-filter: grayscale(25%); /* Safari 6.0 - 9.0 */
+  	filter: grayscale(25%);
+	width: 35px;
+}

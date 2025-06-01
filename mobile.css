@@ -1,0 +1,153 @@
+/* ========== Mobile (<768px) “Stacked” Layout ========== */
+@media (max-width: 768px) {
+
+	body {
+		margin: 5px;
+	}
+
+	a {
+		padding-inline: 0;
+	}
+
+	/* Make the #desktop container scale to full‐width of the phone 
+	   and let it scroll vertically */
+	#desktop {
+		width: 100vw; 
+		height: 95vh;
+		aspect-ratio: auto;        /* no fixed aspect‐ratio on mobile */
+		padding: 0; 
+		margin: 0;
+		overflow-y: auto;         /* allow vertical scrolling */
+	}
+	
+	/* Keep the nav bar pinned at top, full‐width */
+	#nav {
+		width: 100%;
+		padding: 0;
+		font-size: 1.3em;         /* slightly smaller font */
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: center;
+		gap: 5px;
+		background: #ddd;         /* or whatever fits your System 7 look */
+	}
+	#nav a {
+		padding: 0.2em 0.6em;
+	}
+	#time {
+		flex-shrink: 0;
+	}
+	
+	/* “Desk‐stuff” becomes a simple vertical flex‐column */
+	#desk-stuff {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		flex-grow: 0;
+		gap: 1em;                 /* space between windows */
+		padding: 1em;
+	}
+
+	.standard-dialog {
+		display: block;
+		position: static;
+	}
+	
+	/* Override every .window: no more absolute positioning */
+	.window {
+		position: static !important;
+		display: none;            /* only show when opened via JS */
+		width: 100% !important;   /* full width of #desk-stuff minus padding */
+		height: auto !important;  /* fit to content */
+		margin: 0 auto;
+		box-shadow: none;         /* you can remove any drop‐shadow if desired */
+		border: 2px solid #888;   /* a simple border so “windows” still look framed */
+		border-radius: 4px;
+		background: #f0f0f0;      /* typical System 7 window chase */
+	}
+	
+	/* Title‐bar should span full‐width of its window */
+	.window .title-bar,
+	.window .inactive-title-bar {
+		width: 100%;
+	}
+	
+	/* “Resize” (close) button: keep it visible in top‐right of each window */
+	.window .resize {
+		position: absolute;
+		right: 0.5em;
+		display: inline-block;    /* always show on mobile so user can close */
+	}
+	
+	/* Any hard‐coded top/left coordinates must be ignored on mobile */
+	/* e.g. #about, #history, #dmi, etc.: force them to no‐op */
+	#about,
+	#history,
+	#dmi,
+	#cspeed,
+	#pixit,
+	#projects,
+	#fps,
+	#speedrun,
+	#pongun,
+	#flagstore,
+	#music {
+		top: auto !important;
+		left: auto !important;
+	}
+
+	/* Make images scale down nicely inside each window */
+	img, .medium, .skill-icon {
+		width: 80px;
+		height: auto;
+		padding: auto;
+		object-fit: cover;
+	}
+
+	#my-pic {
+		width: 150px;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+	}
+
+	/* Reduce margins/padding inside each .window‐pane for readability */
+	.window-pane {
+		padding: 0.2em;
+		text-align: center;
+	}
+	.field-row {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.field-row * {
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+	}
+
+	.field-desc {
+		margin: 0;
+	}
+
+	.display-row {
+		flex-direction: column;
+		flex-wrap: wrap;
+		gap: 0.5em;
+		width: 100%;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+	}
+
+	.pic-and-button {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 80%;
+	}
+
+	.hide-mobile {
+		display: none;
+	}
+}
